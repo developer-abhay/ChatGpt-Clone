@@ -1,0 +1,197 @@
+.sidebar {
+  width: 260px;
+  background-color: #000000;
+  height: 100vh;
+}
+
+.sidebar-top {
+  max-height: 86.4vh;
+  padding-top: 13px;
+  padding-left: 12px;
+  padding-right: 14px;
+  overflow: hidden;
+}
+.sidebar-top:hover {
+  overflow: scroll;
+  padding-right: 0px;
+}
+
+.sidebar-top:hover::-webkit-scrollbar {
+  width: 14px;
+}
+.sidebar-top:hover::-webkit-scrollbar-track {
+  background-color: black;
+}
+.sidebar-top:hover::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #1a1a1a;
+  border-left: 3.3px solid black;
+  border-right: 3.3px solid black;
+}
+.sidebar-top:hover::-webkit-scrollbar-thumb:hover {
+  background-color: #4d4d4d;
+}
+/* New Chat Button */
+.new-chat-btn {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 7px;
+  border-radius: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.new-chat-btn > .icon {
+  width: 33px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin-right: 6px;
+}
+
+.icon > img {
+  height: 25px;
+  margin-left: -8px;
+  margin-top: 2.2px;
+}
+
+.new-chat-btn-details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-chat-btn-details > h2 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 2px;
+  color: #ffffff;
+}
+
+.new-chat-btn-details > .edit-icon {
+  color: #ffffff;
+}
+
+.new-chat-btn:hover {
+  background-color: #202123;
+}
+
+/* History */
+.history {
+  background-color: #000000;
+  margin-top: 30px;
+}
+
+.history-container {
+  color: #ffffff;
+  font-size: 13px;
+  margin-bottom: 35px;
+}
+
+.history-date {
+  color: #666666;
+  font-size: 12px;
+  padding-left: 9px;
+}
+
+.history-topic {
+  background-color: black;
+  border: 7px solid black;
+  border-radius: 10px;
+  margin-top: 2px;
+  margin-right: 4px;
+  padding: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.history-topic:hover {
+  background-color: #202123;
+  cursor: pointer;
+  border: 7px solid #202123;
+}
+
+/* Bottom Part of sidebar */
+.sidebar-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 260px;
+  height: 16vh;
+  color: #ffffff;
+  background-color: black;
+  padding: 10px;
+}
+
+.upgrade-button {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  background-color: black;
+}
+
+.upgrade-button:hover {
+  background-color: #202123;
+}
+
+.upgrade-button-icon {
+  background-color: black;
+  border: 0.01rem solid grey;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.upgrade-button-icon > .icon {
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  margin-top: 4px;
+  margin-left: 5px;
+}
+.upgrade-button-details > h1 {
+  font-size: 13px;
+}
+.upgrade-button-details > p {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+/* User profile button */
+.user-profile {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  background-color: black;
+}
+.user-profile:hover {
+  background-color: #202123;
+}
+
+.user-profile > div {
+  font-size: 12px;
+  font-weight: 100;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgb(70, 186, 144);
+  padding: 7px 0px 0px 8.5px;
+  margin-right: 10px;
+}
+.user-profile > p {
+  font-size: 14px;
+  font-weight: 500;
+}
