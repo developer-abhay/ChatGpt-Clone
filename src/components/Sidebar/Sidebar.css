@@ -41,7 +41,6 @@
   margin-right: 5px;
   cursor: pointer;
 }
-
 .new-chat-btn > .icon {
   width: 33px;
   height: 30px;
@@ -51,7 +50,7 @@
   margin-right: 6px;
 }
 
-.icon > img {
+.new-chat-btn > .icon > img {
   height: 25px;
   margin-left: -8px;
   margin-top: 2.2px;

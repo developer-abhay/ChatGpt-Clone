@@ -1,1 +1,59 @@
+.example-prompt-container {
+  position: fixed;
+  bottom: 13.5vh;
+  right: 17.1vw;
+  width: 760px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  cursor: pointer;
+}
 
+.prompt {
+  background-color: #343541;
+  width: 370px;
+  height: 65px;
+  margin: 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #565869;
+}
+
+.text > h3 {
+  color: #b9b9c6;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.text > p {
+  color: #7d7d89;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.upward-arrow {
+  background-color: #202123;
+  border-radius: 7px;
+  width: 23px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  display: none;
+}
+.upward-arrow > .icon {
+  font-size: 13px;
+  color: white;
+}
+
+.prompt:hover {
+  background-color: #40414f;
+}
+
+.prompt:hover > .upward-arrow {
+  display: flex;
+}

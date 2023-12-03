@@ -1,6 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
-import icon from "../../assets/ChatGPT-Logo.jpg";
+import icon from "../../assets/ChatGPT-Logo.png";
 import { FaRegEdit } from "react-icons/fa";
 import { BsStars } from "react-icons/bs";
 
@@ -28,10 +28,10 @@ const Sidebar = () => {
             <p className="history-topic">Soc-Arch Q&A</p>
             <p className="history-topic">Chat Assistance Request</p>
             <p className="history-topic">User Seeks Assistance</p>
-            <p className="history-topic">Hello Chat.</p>
           </div>
           <div className="history-container">
             <h2 className="history-date">November</h2>
+            <p className="history-topic">Hello Chat.</p>
             <p className="history-topic">Chat Request: Title Creation</p>
           </div>
           <div className="history-container">

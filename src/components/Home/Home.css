@@ -3,3 +3,52 @@
   height: 100vh;
   background-color: #343541;
 }
+
+.bg {
+  height: 200px;
+  width: 300px;
+  position: fixed;
+  top: 24vh;
+  right: 32vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg > .icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin-right: 6px;
+}
+
+.bg > .icon > img {
+  height: 65px;
+  margin-left: -22px;
+  margin-top: 3px;
+}
+
+.bg > p {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.help-me {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: #494a54;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #5a5b65;
+  border-radius: 50%;
+  font-size: 11px;
+  color: #ffffff;
+  text-align: center;
+  padding: 3px;
+}

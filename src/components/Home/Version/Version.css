@@ -1,0 +1,125 @@
+/* Version button  */
+.chatgpt-version {
+  font-size: 18px;
+  font-weight: 600;
+  width: 150px;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+.chatgpt-version > span {
+  color: #9f9fac;
+  font-weight: 700;
+  margin-left: 5px;
+}
+.chatgpt-version > .icon {
+  font-size: 18px;
+  font-weight: 200;
+  color: #9f9fac;
+}
+
+.chatgpt-version:hover {
+  background-color: #2e303b !important;
+}
+
+/* Version plan */
+.plan {
+  background-color: #202123;
+  border-radius: 10px;
+  width: fit-content;
+  z-index: 99999;
+  padding: 6px 0px;
+  margin: 10px;
+}
+
+.not-visible {
+  display: none;
+}
+
+.plan-item {
+  width: 325px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 0px 6px;
+  cursor: pointer;
+  color: #ffffff;
+  display: flex;
+  align-items: top;
+  justify-content: flex-start;
+}
+
+.plan-item:hover {
+  background-color: #2b2c2e;
+}
+.text {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.text > h2 {
+  font-size: 14px;
+  font-weight: 400;
+}
+.text > p {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #8e8ea0 !important;
+}
+/* gpt 3.5  */
+
+.gpt3_5 > .icon {
+  font-size: 18px;
+  margin-left: 10px;
+  margin-top: 13px;
+}
+
+.checked-icon {
+  margin-top: 9px;
+  margin-left: 104px;
+  font-size: 15px !important;
+}
+
+.plan > .hr {
+  height: 0.1rem;
+  width: 100%;
+  background-color: #2b2c2e;
+  margin: 5px 0px;
+}
+/* gpt 4 */
+.gpt4 {
+  height: 120px;
+  flex-direction: column;
+}
+
+.gpt4 > .div1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.gpt4-icon {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  margin-right: 0px;
+}
+
+.gpt4-icon > .icon {
+  font-size: 15px;
+  color: white;
+}
+.upgrade-btn {
+  background-color: #ab68ff;
+  color: white;
+  width: 275px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px 35px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
