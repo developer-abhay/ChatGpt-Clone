@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  font-size: 15px;
+  border-bottom: 1px solid #5a5b65;
+  display: none;
+}
+
+.hamburger-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.header > p {
+  margin-left: -20px;
+}
+
+.header > .edit-icon {
+  color: #ffffff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 770px) {
+  .header {
+    display: flex;
+  }
+}
+
+.show {
+  display: flex;
+}

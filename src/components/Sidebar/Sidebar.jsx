@@ -3,8 +3,16 @@ import "./Sidebar.css";
 import icon from "../../assets/ChatGPT-Logo.png";
 import { FaRegEdit } from "react-icons/fa";
 import { BsStars } from "react-icons/bs";
+import CloseSharpIcon from "@mui/icons-material/CloseSharp";
 
 const Sidebar = () => {
+  const closeSidebar = () => {
+    const sidebar = document.querySelector(".sidebar");
+    const closeBtn = document.querySelector(".close-btn");
+
+    sidebar.classList.remove("show");
+    closeBtn.classList.remove("show");
+  };
   return (
     <div className="sidebar">
       {/* Sidebar Top (scrollable) */}
@@ -18,6 +26,10 @@ const Sidebar = () => {
             <h2>New chat</h2>
             <FaRegEdit className="edit-icon" />
           </div>
+        </div>
+        {/* Close button */}
+        <div className="close-btn" onClick={closeSidebar}>
+          <CloseSharpIcon />
         </div>
         {/* History */}
         <div className="history">

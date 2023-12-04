@@ -4,10 +4,13 @@ import icon from "../../assets/ChatGPT-Logo.png";
 import Version from "./Version/Version";
 import ExamplePrompts from "./ExamplePrompts/ExamplePrompts";
 import InputPrompt from "../InputPrompt/InputPrompt";
+import Header from "./Header/Header";
 
 const Home = () => {
   return (
     <div className="home">
+      {/* Header (Only visible on smaller screens) */}
+      <Header />
       {/* Version Button */}
       <Version />
       {/* Background Icon and text */}

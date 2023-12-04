@@ -2,14 +2,15 @@
   width: calc(100% - 260px);
   height: 100vh;
   background-color: #343541;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bg {
   height: 200px;
   width: 300px;
-  position: fixed;
-  top: 24vh;
-  right: 32vw;
+  margin-top: 24vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,4 +52,24 @@
   color: #ffffff;
   text-align: center;
   padding: 3px;
+}
+@media only screen and (max-width: 1030px) {
+  .help-me {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  .bg {
+    margin-top: 13vh;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .home {
+    width: 100%;
+  }
+  .bg {
+    margin-top: 38vh;
+  }
 }

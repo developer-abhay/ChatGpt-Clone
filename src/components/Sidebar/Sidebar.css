@@ -2,6 +2,9 @@
   width: 260px;
   background-color: #000000;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: 0.1s ease-in;
 }
 
 .sidebar-top {
@@ -13,6 +16,7 @@
 }
 .sidebar-top:hover {
   overflow: scroll;
+  overflow-x: hidden;
   padding-right: 0px;
 }
 
@@ -115,14 +119,11 @@
 
 /* Bottom Part of sidebar */
 .sidebar-bottom {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 260px;
-  height: 16vh;
   color: #ffffff;
   background-color: black;
   padding: 10px;
+  z-index: 10;
 }
 
 .upgrade-button {
@@ -193,4 +194,36 @@
 .user-profile > p {
   font-size: 14px;
   font-weight: 500;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 770px) {
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+  }
+}
+
+/* Closing And opening using hamburger and close icon */
+
+.close-btn {
+  display: none;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+  position: fixed;
+  top: -0px;
+  left: 260px;
+  border: 2px solid white;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+/* To diaplay the sidebar when clicked on hamburger icon  */
+.show {
+  display: flex;
 }

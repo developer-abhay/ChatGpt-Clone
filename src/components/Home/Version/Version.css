@@ -1,5 +1,8 @@
 /* Version button  */
 .chatgpt-version {
+  position: fixed;
+  top: 0;
+  left: 260px;
   font-size: 18px;
   font-weight: 600;
   width: 150px;
@@ -9,7 +12,7 @@
   align-items: center;
   justify-content: space-around;
   padding: 10px;
-  margin: 5px 10px;
+  margin: 5px;
   cursor: pointer;
 }
 .chatgpt-version > span {
@@ -122,4 +125,11 @@
   padding: 10px;
   font-size: 12px;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 770px) {
+  .chatgpt-version {
+    left: 0;
+    top: 50px;
+  }
 }
