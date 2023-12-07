@@ -3,8 +3,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 3px;
   width: 780px;
+  position: fixed;
+  bottom: 0;
 }
 .input-prompt {
   height: 55px;
@@ -21,7 +22,9 @@
 .input-prompt > input {
   width: 100%;
   border: none;
+  outline: none;
   background: transparent;
+  color: white;
 }
 
 .input-prompt-container > p {
@@ -38,13 +41,14 @@
 
 .input-prompt > .upward-arrow {
   background-color: #494a54;
+  cursor: pointer;
+  border: none;
   border-radius: 7px;
   width: 30px;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* display: none; */
 }
 .input-prompt > .upward-arrow > .icon {
   font-size: 22px;
@@ -59,6 +63,15 @@
 }
 @media only screen and (max-width: 1020px) {
   .input-prompt-container {
+    width: calc(98% - 260px);
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .input-prompt-container {
     width: 95%;
+  }
+  .input-prompt-container > p {
+    font-size: 10px;
   }
 }

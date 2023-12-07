@@ -1,0 +1,31 @@
+.chat-screen {
+  width: 780px;
+  height: 79vh;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.chat-screen::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 1270px) {
+  .chat-screen {
+    width: 650px;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .chat-screen {
+    width: 98%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .chat-screen {
+    width: 100%;
+    padding: 0px 10px;
+    height: 72vh;
+  }
+}

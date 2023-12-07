@@ -1,0 +1,44 @@
+.user-chat {
+  padding: 20px;
+}
+.user-logo {
+  font-size: 10px;
+  color: white;
+  font-weight: 400;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(70, 186, 144);
+  padding: 5.5px 0px 0px 6.5px;
+  margin-right: 10px;
+}
+
+.user-details {
+  width: 200px;
+  display: flex;
+  color: White;
+}
+
+.user-details > h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.input-text {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  word-spacing: 1.5px;
+  line-height: 30px;
+  padding: 0px 30px;
+}
+
+@media only screen and (max-width: 770px) {
+  .user-chat {
+    padding: 15px;
+  }
+  .input-text {
+    padding: 10px 20px;
+  }
+}

@@ -1,8 +1,9 @@
 .example-prompt-container {
   width: 780px;
-  margin-top: 12.6vh;
   display: flex;
   flex-wrap: wrap;
+  position: fixed;
+  bottom: 13vh;
 }
 
 .prompt {
@@ -68,7 +69,7 @@
 
 @media only screen and (max-width: 1020px) {
   .example-prompt-container {
-    width: 95%;
+    width: calc(98% - 260px);
   }
   .prompt {
     margin-left: 5px;
@@ -110,7 +111,7 @@
 
 @media only screen and (max-width: 530px) {
   .example-prompt-container {
-    height: 175px;
+    height: 142px;
   }
   .prompt {
     width: 95%;
